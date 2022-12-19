@@ -19,14 +19,21 @@ main()
     }
     printf("\nСтрока после удаления первого элемента: \n");
     puts(str);
-
+    
     char strmir[100];
 
     for(int j=strlen(str);j>0;j--)
     {
         strmir[strlen(str)-j] = str[j-1];       
     }
-
-    printf("\nСтрока после разворота: \n");
+    strmir[strlen(str)] = str[strlen(str)];
+    printf("\nСтрока после : \n");
     puts(strmir);
+
+
+
+
+
+
+    // puts(str);
 }
